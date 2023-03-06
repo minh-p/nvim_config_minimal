@@ -16,10 +16,10 @@ local sets = {
     -- turn bell on if you are a masochist ha ha
     belloff = "all",
     clipboard = "unnamedplus", -- allow clipboarding from system
-    -- I love the number 4 so should you???
-    tabstop = 4,
-    shiftwidth = 4,
-    softtabstop = 4,
+    -- I love the number 4 (and 2) so should you???
+    tabstop = 2,
+    shiftwidth = 2,
+    softtabstop = 2,
     expandtab = true,
     --exrc = true, --if you want neovim to use local-to-directory configs
     relativenumber = true,
@@ -72,7 +72,8 @@ local plugins = {
     {path="hrsh7th/nvim-cmp", config = function()require("cmp-config")end},
     {path="kyazdani42/nvim-web-devicons", branch="master"},
     {path="nvim-lualine/lualine.nvim", branch="master", config = function()require("lualine-config")end},
-    {path="shaunsingh/solarized.nvim", branch="master"}
+    --{path="shaunsingh/solarized.nvim", branch="master"}
+    {path="maxmx03/solarized.nvim", branch="main", config = function()require("solarized-config")end}
 }
 
 local o = {}

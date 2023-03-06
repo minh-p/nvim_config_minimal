@@ -7,7 +7,7 @@ table.insert(runtime_path, "lua/?/init.lua")
 
 local library = {}
 
-require"lspconfig".sumneko_lua.setup {
+require"lspconfig".lua_ls.setup {
   cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"};
   settings = {
     Lua = {

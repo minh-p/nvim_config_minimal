@@ -4,7 +4,7 @@
 --]]
 
 -- Edit the servers:
-local languageServersInstalled = {"pyright", "lua-language-server", "vscode-html-language-server"}
+local languageServersInstalled = {"pyright", "lua_ls", "vscode-html-language-server", "eslint"}
 
 -- For each server, there will be a lua file to set it up inside the lsp directory.
 -- Be sure to install the lsps!
