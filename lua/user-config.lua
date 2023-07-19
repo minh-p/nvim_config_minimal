@@ -47,9 +47,9 @@ local sets = {
     -- only vim chads use wildmenu. who uses telescope or fzf anyways?
     path = ".,/usr/include,,,**",
     wildmenu = true,
-    spell = true,
+    spell = false,
     spelllang = "en",
-    background = "light"
+    background = "dark"
 }
 
 local globals = {
@@ -72,8 +72,9 @@ local plugins = {
     {path="hrsh7th/nvim-cmp", config = function()require("cmp-config")end},
     {path="kyazdani42/nvim-web-devicons", branch="master"},
     {path="nvim-lualine/lualine.nvim", branch="master", config = function()require("lualine-config")end},
-    --{path="shaunsingh/solarized.nvim", branch="master"}
-    {path="maxmx03/solarized.nvim", branch="main", config = function()require("solarized-config")end}
+    --{path="shaunsingh/solarized.nvim", branch="master"},
+    --{path="maxmx03/solarized.nvim", branch="main", config = function()require("solarized-config")end},
+    {path="christoomey/vim-tmux-navigator", branch="master"}
 }
 
 local o = {}
@@ -83,7 +84,7 @@ return {
 	sets = sets,
 	globals = globals,
 	keybinds = keybinds,
-	colorschemeName = "solarized",
+	colorschemeName = "tokyonight",
 	o = o,
     plugins = plugins,
     isTransparent = true,
