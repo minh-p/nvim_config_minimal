@@ -11,8 +11,6 @@ vim.wo: behaves like :let &l:{option-name} for window-local options
 -- ]]
 
 local sets = {
-	relativenumber = true,
-	number = true,
     -- turn bell on if you are a masochist ha ha
     belloff = "all",
     clipboard = "unnamedplus", -- allow clipboarding from system
@@ -74,7 +72,8 @@ local plugins = {
     {path="nvim-lualine/lualine.nvim", branch="master", config = function()require("lualine-config")end},
     --{path="shaunsingh/solarized.nvim", branch="master"},
     --{path="maxmx03/solarized.nvim", branch="main", config = function()require("solarized-config")end},
-    {path="christoomey/vim-tmux-navigator", branch="master"}
+    {path="christoomey/vim-tmux-navigator", branch="master"},
+    {path="digitaltoad/vim-pug", branch="master"}
 }
 
 local o = {}
